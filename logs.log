@@ -1,0 +1,2112 @@
+2024-12-03 10:16:23,308:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 10:16:23,308:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 10:16:23,308:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 10:16:23,308:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 10:16:24,953:INFO:PyCaret ClassificationExperiment
+2024-12-03 10:16:24,953:INFO:Logging name: clf-default-name
+2024-12-03 10:16:24,954:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-03 10:16:24,954:INFO:version 3.3.2
+2024-12-03 10:16:24,954:INFO:Initializing setup()
+2024-12-03 10:16:24,954:INFO:self.USI: d5c6
+2024-12-03 10:16:24,954:INFO:self._variable_keys: {'X', 'fold_groups_param', 'target_param', 'y_train', 'exp_name_log', 'X_test', 'idx', 'gpu_param', 'fold_shuffle_param', 'USI', 'n_jobs_param', 'y', 'X_train', 'is_multiclass', 'exp_id', 'seed', 'html_param', 'memory', '_available_plots', 'fold_generator', 'data', '_ml_usecase', 'fix_imbalance', 'log_plots_param', 'gpu_n_jobs_param', 'logging_param', 'pipeline', 'y_test'}
+2024-12-03 10:16:24,954:INFO:Checking environment
+2024-12-03 10:16:24,954:INFO:python_version: 3.11.5
+2024-12-03 10:16:24,954:INFO:python_build: ('main', 'Sep 11 2023 13:26:23')
+2024-12-03 10:16:24,954:INFO:machine: AMD64
+2024-12-03 10:16:24,954:INFO:platform: Windows-10-10.0.19045-SP0
+2024-12-03 10:16:24,954:INFO:Memory: svmem(total=8443961344, available=1561432064, percent=81.5, used=6882529280, free=1561432064)
+2024-12-03 10:16:24,954:INFO:Physical Core: 4
+2024-12-03 10:16:24,954:INFO:Logical Core: 8
+2024-12-03 10:16:24,954:INFO:Checking libraries
+2024-12-03 10:16:24,955:INFO:System:
+2024-12-03 10:16:24,955:INFO:    python: 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]
+2024-12-03 10:16:24,955:INFO:executable: c:\Users\raulj\anaconda3\python.exe
+2024-12-03 10:16:24,955:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-12-03 10:16:24,955:INFO:PyCaret required dependencies:
+2024-12-03 10:16:26,831:INFO:                 pip: 23.2.1
+2024-12-03 10:16:26,831:INFO:          setuptools: 68.0.0
+2024-12-03 10:16:26,831:INFO:             pycaret: 3.3.2
+2024-12-03 10:16:26,831:INFO:             IPython: 8.15.0
+2024-12-03 10:16:26,831:INFO:          ipywidgets: 8.0.4
+2024-12-03 10:16:26,831:INFO:                tqdm: 4.65.0
+2024-12-03 10:16:26,831:INFO:               numpy: 1.24.3
+2024-12-03 10:16:26,831:INFO:              pandas: 2.0.3
+2024-12-03 10:16:26,831:INFO:              jinja2: 3.1.2
+2024-12-03 10:16:26,831:INFO:               scipy: 1.11.1
+2024-12-03 10:16:26,831:INFO:              joblib: 1.2.0
+2024-12-03 10:16:26,831:INFO:             sklearn: 1.4.2
+2024-12-03 10:16:26,831:INFO:                pyod: 2.0.2
+2024-12-03 10:16:26,831:INFO:            imblearn: 0.12.4
+2024-12-03 10:16:26,831:INFO:   category_encoders: 2.6.4
+2024-12-03 10:16:26,832:INFO:            lightgbm: 4.5.0
+2024-12-03 10:16:26,832:INFO:               numba: 0.57.1
+2024-12-03 10:16:26,832:INFO:            requests: 2.31.0
+2024-12-03 10:16:26,832:INFO:          matplotlib: 3.7.2
+2024-12-03 10:16:26,832:INFO:          scikitplot: 0.3.7
+2024-12-03 10:16:26,832:INFO:         yellowbrick: 1.5
+2024-12-03 10:16:26,832:INFO:              plotly: 5.24.1
+2024-12-03 10:16:26,832:INFO:    plotly-resampler: Not installed
+2024-12-03 10:16:26,832:INFO:             kaleido: 0.2.1
+2024-12-03 10:16:26,832:INFO:           schemdraw: 0.15
+2024-12-03 10:16:26,832:INFO:         statsmodels: 0.14.0
+2024-12-03 10:16:26,832:INFO:              sktime: 0.26.0
+2024-12-03 10:16:26,832:INFO:               tbats: 1.1.3
+2024-12-03 10:16:26,832:INFO:            pmdarima: 2.0.4
+2024-12-03 10:16:26,832:INFO:              psutil: 5.9.0
+2024-12-03 10:16:26,832:INFO:          markupsafe: 2.1.1
+2024-12-03 10:16:26,832:INFO:             pickle5: Not installed
+2024-12-03 10:16:26,832:INFO:         cloudpickle: 2.2.1
+2024-12-03 10:16:26,832:INFO:         deprecation: 2.1.0
+2024-12-03 10:16:26,833:INFO:              xxhash: 2.0.2
+2024-12-03 10:16:26,833:INFO:           wurlitzer: Not installed
+2024-12-03 10:16:26,833:INFO:PyCaret optional dependencies:
+2024-12-03 10:16:26,849:INFO:                shap: Not installed
+2024-12-03 10:16:26,849:INFO:           interpret: Not installed
+2024-12-03 10:16:26,850:INFO:                umap: Not installed
+2024-12-03 10:16:26,850:INFO:     ydata_profiling: Not installed
+2024-12-03 10:16:26,850:INFO:  explainerdashboard: Not installed
+2024-12-03 10:16:26,850:INFO:             autoviz: Not installed
+2024-12-03 10:16:26,850:INFO:           fairlearn: Not installed
+2024-12-03 10:16:26,850:INFO:          deepchecks: Not installed
+2024-12-03 10:16:26,850:INFO:             xgboost: Not installed
+2024-12-03 10:16:26,850:INFO:            catboost: Not installed
+2024-12-03 10:16:26,850:INFO:              kmodes: Not installed
+2024-12-03 10:16:26,850:INFO:             mlxtend: Not installed
+2024-12-03 10:16:26,850:INFO:       statsforecast: Not installed
+2024-12-03 10:16:26,850:INFO:        tune_sklearn: Not installed
+2024-12-03 10:16:26,850:INFO:                 ray: Not installed
+2024-12-03 10:16:26,850:INFO:            hyperopt: Not installed
+2024-12-03 10:16:26,850:INFO:              optuna: Not installed
+2024-12-03 10:16:26,850:INFO:               skopt: Not installed
+2024-12-03 10:16:26,850:INFO:              mlflow: Not installed
+2024-12-03 10:16:26,850:INFO:              gradio: Not installed
+2024-12-03 10:16:26,850:INFO:             fastapi: Not installed
+2024-12-03 10:16:26,850:INFO:             uvicorn: Not installed
+2024-12-03 10:16:26,851:INFO:              m2cgen: Not installed
+2024-12-03 10:16:26,851:INFO:           evidently: Not installed
+2024-12-03 10:16:26,851:INFO:               fugue: Not installed
+2024-12-03 10:16:26,851:INFO:           streamlit: Not installed
+2024-12-03 10:16:26,851:INFO:             prophet: Not installed
+2024-12-03 10:16:26,851:INFO:None
+2024-12-03 10:16:26,851:INFO:Set up data.
+2024-12-03 10:16:26,871:INFO:Set up folding strategy.
+2024-12-03 10:16:26,871:INFO:Set up train/test split.
+2024-12-03 10:16:26,903:INFO:Set up index.
+2024-12-03 10:16:26,905:INFO:Assigning column types.
+2024-12-03 10:16:26,922:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-03 10:16:26,969:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 10:16:26,988:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-03 10:16:27,033:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,033:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,080:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 10:16:27,081:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-03 10:16:27,110:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,111:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,111:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-03 10:16:27,159:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-03 10:16:27,189:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,190:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,238:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-03 10:16:27,268:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,269:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,269:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-03 10:16:27,358:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,358:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,437:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,437:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,441:INFO:Preparing preprocessing pipeline...
+2024-12-03 10:16:27,446:INFO:Set up label encoding.
+2024-12-03 10:16:27,446:INFO:Set up simple imputation.
+2024-12-03 10:16:27,533:INFO:Finished creating preprocessing pipeline.
+2024-12-03 10:16:27,539:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\raulj\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['firstBlood', 'firstTower',
+                                             'firstInhibitor', 'firstBaron',
+                                             'firstDragon', 'firstRiftHerald',
+                                             't1_towerKil...
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2024-12-03 10:16:27,539:INFO:Creating final display dataframe.
+2024-12-03 10:16:27,740:INFO:Setup _display_container:                     Description             Value
+0                    Session id               252
+1                        Target            winner
+2                   Target type            Binary
+3                Target mapping        1: 0, 2: 1
+4           Original data shape       (51490, 17)
+5        Transformed data shape       (51490, 17)
+6   Transformed train set shape       (36043, 17)
+7    Transformed test set shape       (15447, 17)
+8              Numeric features                16
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13               Fold Generator   StratifiedKFold
+14                  Fold Number                10
+15                     CPU Jobs                -1
+16                      Use GPU             False
+17               Log Experiment             False
+18              Experiment Name  clf-default-name
+19                          USI              d5c6
+2024-12-03 10:16:27,832:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,832:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,912:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,912:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 10:16:27,914:INFO:setup() successfully completed in 2.97s...............
+2024-12-03 10:16:27,914:INFO:Initializing compare_models()
+2024-12-03 10:16:27,914:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2024-12-03 10:16:27,914:INFO:Checking exceptions
+2024-12-03 10:16:27,932:INFO:Preparing display monitor
+2024-12-03 10:16:27,960:INFO:Initializing Logistic Regression
+2024-12-03 10:16:27,960:INFO:Total runtime is 0.0 minutes
+2024-12-03 10:16:27,965:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:27,965:INFO:Initializing create_model()
+2024-12-03 10:16:27,965:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:27,965:INFO:Checking exceptions
+2024-12-03 10:16:27,965:INFO:Importing libraries
+2024-12-03 10:16:27,966:INFO:Copying training dataset
+2024-12-03 10:16:27,994:INFO:Defining folds
+2024-12-03 10:16:27,994:INFO:Declaring metric variables
+2024-12-03 10:16:27,998:INFO:Importing untrained model
+2024-12-03 10:16:28,002:INFO:Logistic Regression Imported successfully
+2024-12-03 10:16:28,009:INFO:Starting cross validation
+2024-12-03 10:16:28,010:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:37,814:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,818:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,822:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,822:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,825:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,829:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,830:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,833:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,891:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,900:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,906:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,909:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,915:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,918:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,923:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,925:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,932:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,978:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,988:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:37,997:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,053:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,061:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,069:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,147:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,151:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,155:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,161:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,164:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,168:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:38,177:INFO:Calculating mean and std
+2024-12-03 10:16:38,178:INFO:Creating metrics dataframe
+2024-12-03 10:16:38,182:INFO:Uploading results into container
+2024-12-03 10:16:38,183:INFO:Uploading model into container now
+2024-12-03 10:16:38,184:INFO:_master_model_container: 1
+2024-12-03 10:16:38,184:INFO:_display_container: 2
+2024-12-03 10:16:38,185:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=252, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2024-12-03 10:16:38,185:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:38,299:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:38,300:INFO:Creating metrics dataframe
+2024-12-03 10:16:38,308:INFO:Initializing K Neighbors Classifier
+2024-12-03 10:16:38,309:INFO:Total runtime is 0.17247669299443563 minutes
+2024-12-03 10:16:38,312:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:38,312:INFO:Initializing create_model()
+2024-12-03 10:16:38,312:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:38,313:INFO:Checking exceptions
+2024-12-03 10:16:38,313:INFO:Importing libraries
+2024-12-03 10:16:38,313:INFO:Copying training dataset
+2024-12-03 10:16:38,340:INFO:Defining folds
+2024-12-03 10:16:38,340:INFO:Declaring metric variables
+2024-12-03 10:16:38,343:INFO:Importing untrained model
+2024-12-03 10:16:38,348:INFO:K Neighbors Classifier Imported successfully
+2024-12-03 10:16:38,355:INFO:Starting cross validation
+2024-12-03 10:16:38,356:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:41,494:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,495:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,495:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,501:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,503:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,503:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,506:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,507:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,510:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,510:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,514:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,522:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,526:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,529:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,534:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,535:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,538:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,541:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,543:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,545:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,549:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,549:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,554:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:41,559:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,962:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,963:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,965:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,967:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,970:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,970:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:42,979:INFO:Calculating mean and std
+2024-12-03 10:16:42,980:INFO:Creating metrics dataframe
+2024-12-03 10:16:42,982:INFO:Uploading results into container
+2024-12-03 10:16:42,982:INFO:Uploading model into container now
+2024-12-03 10:16:42,982:INFO:_master_model_container: 2
+2024-12-03 10:16:42,982:INFO:_display_container: 2
+2024-12-03 10:16:42,983:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-12-03 10:16:42,983:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:43,090:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:43,090:INFO:Creating metrics dataframe
+2024-12-03 10:16:43,105:INFO:Initializing Naive Bayes
+2024-12-03 10:16:43,105:INFO:Total runtime is 0.25241216023763025 minutes
+2024-12-03 10:16:43,109:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:43,110:INFO:Initializing create_model()
+2024-12-03 10:16:43,110:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:43,110:INFO:Checking exceptions
+2024-12-03 10:16:43,110:INFO:Importing libraries
+2024-12-03 10:16:43,111:INFO:Copying training dataset
+2024-12-03 10:16:43,151:INFO:Defining folds
+2024-12-03 10:16:43,152:INFO:Declaring metric variables
+2024-12-03 10:16:43,155:INFO:Importing untrained model
+2024-12-03 10:16:43,159:INFO:Naive Bayes Imported successfully
+2024-12-03 10:16:43,170:INFO:Starting cross validation
+2024-12-03 10:16:43,171:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:43,316:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,325:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,331:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,334:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,337:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,341:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,344:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,351:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,352:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,357:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,357:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,358:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,361:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,364:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,364:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,365:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,365:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,369:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,371:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,371:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,372:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,375:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,375:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,426:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,430:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,432:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,434:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,436:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,439:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,448:INFO:Calculating mean and std
+2024-12-03 10:16:43,450:INFO:Creating metrics dataframe
+2024-12-03 10:16:43,451:INFO:Uploading results into container
+2024-12-03 10:16:43,452:INFO:Uploading model into container now
+2024-12-03 10:16:43,453:INFO:_master_model_container: 3
+2024-12-03 10:16:43,453:INFO:_display_container: 2
+2024-12-03 10:16:43,453:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2024-12-03 10:16:43,453:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:43,560:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:43,560:INFO:Creating metrics dataframe
+2024-12-03 10:16:43,572:INFO:Initializing Decision Tree Classifier
+2024-12-03 10:16:43,572:INFO:Total runtime is 0.260186779499054 minutes
+2024-12-03 10:16:43,575:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:43,575:INFO:Initializing create_model()
+2024-12-03 10:16:43,576:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:43,576:INFO:Checking exceptions
+2024-12-03 10:16:43,576:INFO:Importing libraries
+2024-12-03 10:16:43,576:INFO:Copying training dataset
+2024-12-03 10:16:43,602:INFO:Defining folds
+2024-12-03 10:16:43,602:INFO:Declaring metric variables
+2024-12-03 10:16:43,606:INFO:Importing untrained model
+2024-12-03 10:16:43,611:INFO:Decision Tree Classifier Imported successfully
+2024-12-03 10:16:43,618:INFO:Starting cross validation
+2024-12-03 10:16:43,619:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:43,855:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,860:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,861:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,862:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,865:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,866:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,870:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,870:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,873:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,873:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,874:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,875:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,877:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,880:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,881:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,882:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,888:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,889:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,890:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,894:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,895:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,901:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,902:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:43,907:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,004:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,007:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,008:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,010:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,011:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,014:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,023:INFO:Calculating mean and std
+2024-12-03 10:16:44,024:INFO:Creating metrics dataframe
+2024-12-03 10:16:44,026:INFO:Uploading results into container
+2024-12-03 10:16:44,027:INFO:Uploading model into container now
+2024-12-03 10:16:44,027:INFO:_master_model_container: 4
+2024-12-03 10:16:44,027:INFO:_display_container: 2
+2024-12-03 10:16:44,028:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=252, splitter='best')
+2024-12-03 10:16:44,028:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:44,136:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:44,136:INFO:Creating metrics dataframe
+2024-12-03 10:16:44,145:INFO:Initializing SVM - Linear Kernel
+2024-12-03 10:16:44,145:INFO:Total runtime is 0.2697450717290243 minutes
+2024-12-03 10:16:44,149:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:44,150:INFO:Initializing create_model()
+2024-12-03 10:16:44,150:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:44,150:INFO:Checking exceptions
+2024-12-03 10:16:44,151:INFO:Importing libraries
+2024-12-03 10:16:44,151:INFO:Copying training dataset
+2024-12-03 10:16:44,177:INFO:Defining folds
+2024-12-03 10:16:44,177:INFO:Declaring metric variables
+2024-12-03 10:16:44,180:INFO:Importing untrained model
+2024-12-03 10:16:44,185:INFO:SVM - Linear Kernel Imported successfully
+2024-12-03 10:16:44,192:INFO:Starting cross validation
+2024-12-03 10:16:44,194:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:44,619:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,625:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,632:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,677:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,684:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,691:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,697:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,704:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,712:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,724:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,731:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,738:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,744:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,752:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,759:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,762:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,768:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,774:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,775:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,780:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,786:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,812:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,817:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,821:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,927:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,931:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,935:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,948:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,952:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,955:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:44,963:INFO:Calculating mean and std
+2024-12-03 10:16:44,965:INFO:Creating metrics dataframe
+2024-12-03 10:16:44,967:INFO:Uploading results into container
+2024-12-03 10:16:44,968:INFO:Uploading model into container now
+2024-12-03 10:16:44,968:INFO:_master_model_container: 5
+2024-12-03 10:16:44,968:INFO:_display_container: 2
+2024-12-03 10:16:44,968:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=252, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2024-12-03 10:16:44,969:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:45,075:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:45,075:INFO:Creating metrics dataframe
+2024-12-03 10:16:45,087:INFO:Initializing Ridge Classifier
+2024-12-03 10:16:45,087:INFO:Total runtime is 0.28544082641601565 minutes
+2024-12-03 10:16:45,091:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:45,091:INFO:Initializing create_model()
+2024-12-03 10:16:45,092:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:45,092:INFO:Checking exceptions
+2024-12-03 10:16:45,092:INFO:Importing libraries
+2024-12-03 10:16:45,092:INFO:Copying training dataset
+2024-12-03 10:16:45,119:INFO:Defining folds
+2024-12-03 10:16:45,119:INFO:Declaring metric variables
+2024-12-03 10:16:45,122:INFO:Importing untrained model
+2024-12-03 10:16:45,126:INFO:Ridge Classifier Imported successfully
+2024-12-03 10:16:45,134:INFO:Starting cross validation
+2024-12-03 10:16:45,135:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:45,306:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,307:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,308:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,311:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,312:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,314:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,317:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,318:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,318:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,318:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,320:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,324:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,325:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,330:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,330:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,334:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,337:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,340:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,346:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,354:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,406:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,409:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,411:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,413:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,415:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,419:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:45,427:INFO:Calculating mean and std
+2024-12-03 10:16:45,428:INFO:Creating metrics dataframe
+2024-12-03 10:16:45,430:INFO:Uploading results into container
+2024-12-03 10:16:45,430:INFO:Uploading model into container now
+2024-12-03 10:16:45,431:INFO:_master_model_container: 6
+2024-12-03 10:16:45,431:INFO:_display_container: 2
+2024-12-03 10:16:45,431:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=252, solver='auto',
+                tol=0.0001)
+2024-12-03 10:16:45,431:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:45,539:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:45,541:INFO:Creating metrics dataframe
+2024-12-03 10:16:45,550:INFO:Initializing Random Forest Classifier
+2024-12-03 10:16:45,550:INFO:Total runtime is 0.293166987101237 minutes
+2024-12-03 10:16:45,555:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:45,556:INFO:Initializing create_model()
+2024-12-03 10:16:45,556:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:45,556:INFO:Checking exceptions
+2024-12-03 10:16:45,556:INFO:Importing libraries
+2024-12-03 10:16:45,556:INFO:Copying training dataset
+2024-12-03 10:16:45,583:INFO:Defining folds
+2024-12-03 10:16:45,583:INFO:Declaring metric variables
+2024-12-03 10:16:45,587:INFO:Importing untrained model
+2024-12-03 10:16:45,591:INFO:Random Forest Classifier Imported successfully
+2024-12-03 10:16:45,598:INFO:Starting cross validation
+2024-12-03 10:16:45,600:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:49,328:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,330:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,332:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,336:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,337:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,340:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,343:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,344:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,346:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,421:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,440:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,446:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,450:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,451:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,461:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,462:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,472:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,476:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,494:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,503:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,511:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,524:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,531:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:49,537:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,453:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,458:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,462:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,468:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,471:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,475:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,484:INFO:Calculating mean and std
+2024-12-03 10:16:50,485:INFO:Creating metrics dataframe
+2024-12-03 10:16:50,487:INFO:Uploading results into container
+2024-12-03 10:16:50,488:INFO:Uploading model into container now
+2024-12-03 10:16:50,488:INFO:_master_model_container: 7
+2024-12-03 10:16:50,489:INFO:_display_container: 2
+2024-12-03 10:16:50,489:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=252, verbose=0,
+                       warm_start=False)
+2024-12-03 10:16:50,489:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:50,620:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:50,620:INFO:Creating metrics dataframe
+2024-12-03 10:16:50,632:INFO:Initializing Quadratic Discriminant Analysis
+2024-12-03 10:16:50,632:INFO:Total runtime is 0.37786094347635907 minutes
+2024-12-03 10:16:50,636:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:50,636:INFO:Initializing create_model()
+2024-12-03 10:16:50,636:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:50,637:INFO:Checking exceptions
+2024-12-03 10:16:50,637:INFO:Importing libraries
+2024-12-03 10:16:50,637:INFO:Copying training dataset
+2024-12-03 10:16:50,663:INFO:Defining folds
+2024-12-03 10:16:50,664:INFO:Declaring metric variables
+2024-12-03 10:16:50,669:INFO:Importing untrained model
+2024-12-03 10:16:50,673:INFO:Quadratic Discriminant Analysis Imported successfully
+2024-12-03 10:16:50,680:INFO:Starting cross validation
+2024-12-03 10:16:50,681:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:50,839:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,839:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,839:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,840:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,840:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,840:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,863:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,892:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:50,927:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,930:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,930:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,932:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,933:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,933:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,934:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,937:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,938:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,939:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,939:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,940:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,941:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,942:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,943:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,944:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,945:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,945:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,946:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,948:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,949:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,950:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,956:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:50,958:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,008:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:51,012:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-12-03 10:16:51,034:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,037:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,037:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,041:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,041:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,044:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:51,056:INFO:Calculating mean and std
+2024-12-03 10:16:51,059:INFO:Creating metrics dataframe
+2024-12-03 10:16:51,062:INFO:Uploading results into container
+2024-12-03 10:16:51,063:INFO:Uploading model into container now
+2024-12-03 10:16:51,064:INFO:_master_model_container: 8
+2024-12-03 10:16:51,064:INFO:_display_container: 2
+2024-12-03 10:16:51,065:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2024-12-03 10:16:51,065:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:51,173:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:51,174:INFO:Creating metrics dataframe
+2024-12-03 10:16:51,184:INFO:Initializing Ada Boost Classifier
+2024-12-03 10:16:51,184:INFO:Total runtime is 0.38706603447596233 minutes
+2024-12-03 10:16:51,188:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:51,188:INFO:Initializing create_model()
+2024-12-03 10:16:51,188:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:51,188:INFO:Checking exceptions
+2024-12-03 10:16:51,188:INFO:Importing libraries
+2024-12-03 10:16:51,188:INFO:Copying training dataset
+2024-12-03 10:16:51,216:INFO:Defining folds
+2024-12-03 10:16:51,216:INFO:Declaring metric variables
+2024-12-03 10:16:51,220:INFO:Importing untrained model
+2024-12-03 10:16:51,224:INFO:Ada Boost Classifier Imported successfully
+2024-12-03 10:16:51,232:INFO:Starting cross validation
+2024-12-03 10:16:51,233:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:16:51,302:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,314:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,322:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,328:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,346:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,346:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,358:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:51,368:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:53,400:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,407:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,416:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,424:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,430:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,434:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,438:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,442:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,450:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,465:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,471:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,474:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,478:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,478:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,482:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,485:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,486:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,486:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,492:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,492:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,492:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,501:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,505:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:53,506:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:53,521:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\ensemble\_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2024-12-03 10:16:54,482:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,486:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,489:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,493:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,496:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,501:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:16:54,509:INFO:Calculating mean and std
+2024-12-03 10:16:54,510:INFO:Creating metrics dataframe
+2024-12-03 10:16:54,512:INFO:Uploading results into container
+2024-12-03 10:16:54,513:INFO:Uploading model into container now
+2024-12-03 10:16:54,513:INFO:_master_model_container: 9
+2024-12-03 10:16:54,513:INFO:_display_container: 2
+2024-12-03 10:16:54,513:INFO:AdaBoostClassifier(algorithm='SAMME.R', estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=252)
+2024-12-03 10:16:54,514:INFO:create_model() successfully completed......................................
+2024-12-03 10:16:54,619:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:16:54,619:INFO:Creating metrics dataframe
+2024-12-03 10:16:54,633:INFO:Initializing Gradient Boosting Classifier
+2024-12-03 10:16:54,633:INFO:Total runtime is 0.44454211791356407 minutes
+2024-12-03 10:16:54,636:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:16:54,637:INFO:Initializing create_model()
+2024-12-03 10:16:54,637:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:16:54,637:INFO:Checking exceptions
+2024-12-03 10:16:54,637:INFO:Importing libraries
+2024-12-03 10:16:54,637:INFO:Copying training dataset
+2024-12-03 10:16:54,663:INFO:Defining folds
+2024-12-03 10:16:54,663:INFO:Declaring metric variables
+2024-12-03 10:16:54,667:INFO:Importing untrained model
+2024-12-03 10:16:54,672:INFO:Gradient Boosting Classifier Imported successfully
+2024-12-03 10:16:54,679:INFO:Starting cross validation
+2024-12-03 10:16:54,680:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:00,578:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,586:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,594:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,712:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,720:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,723:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,728:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,731:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,739:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,771:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,778:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,788:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,802:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,811:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,820:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,823:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,831:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,832:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,840:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,844:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,855:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,869:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,876:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:00,883:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,741:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,745:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,750:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,781:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,785:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,788:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:03,799:INFO:Calculating mean and std
+2024-12-03 10:17:03,800:INFO:Creating metrics dataframe
+2024-12-03 10:17:03,803:INFO:Uploading results into container
+2024-12-03 10:17:03,804:INFO:Uploading model into container now
+2024-12-03 10:17:03,805:INFO:_master_model_container: 10
+2024-12-03 10:17:03,805:INFO:_display_container: 2
+2024-12-03 10:17:03,805:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=252, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-12-03 10:17:03,805:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:03,914:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:17:03,914:INFO:Creating metrics dataframe
+2024-12-03 10:17:03,924:INFO:Initializing Linear Discriminant Analysis
+2024-12-03 10:17:03,924:INFO:Total runtime is 0.5993940711021424 minutes
+2024-12-03 10:17:03,928:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:17:03,929:INFO:Initializing create_model()
+2024-12-03 10:17:03,929:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:03,929:INFO:Checking exceptions
+2024-12-03 10:17:03,930:INFO:Importing libraries
+2024-12-03 10:17:03,930:INFO:Copying training dataset
+2024-12-03 10:17:03,958:INFO:Defining folds
+2024-12-03 10:17:03,958:INFO:Declaring metric variables
+2024-12-03 10:17:03,961:INFO:Importing untrained model
+2024-12-03 10:17:03,967:INFO:Linear Discriminant Analysis Imported successfully
+2024-12-03 10:17:03,974:INFO:Starting cross validation
+2024-12-03 10:17:03,975:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:04,360:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,362:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,362:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,366:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,369:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,370:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,375:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,376:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,376:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,376:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,377:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,382:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,383:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,384:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,387:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,389:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,389:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,391:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,394:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,395:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,398:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,404:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,407:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,549:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,553:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,554:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,557:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,559:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,564:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:04,575:INFO:Calculating mean and std
+2024-12-03 10:17:04,576:INFO:Creating metrics dataframe
+2024-12-03 10:17:04,581:INFO:Uploading results into container
+2024-12-03 10:17:04,581:INFO:Uploading model into container now
+2024-12-03 10:17:04,582:INFO:_master_model_container: 11
+2024-12-03 10:17:04,582:INFO:_display_container: 2
+2024-12-03 10:17:04,582:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2024-12-03 10:17:04,582:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:04,694:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:17:04,694:INFO:Creating metrics dataframe
+2024-12-03 10:17:04,706:INFO:Initializing Extra Trees Classifier
+2024-12-03 10:17:04,706:INFO:Total runtime is 0.6124281247456869 minutes
+2024-12-03 10:17:04,710:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:17:04,711:INFO:Initializing create_model()
+2024-12-03 10:17:04,711:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:04,711:INFO:Checking exceptions
+2024-12-03 10:17:04,711:INFO:Importing libraries
+2024-12-03 10:17:04,711:INFO:Copying training dataset
+2024-12-03 10:17:04,737:INFO:Defining folds
+2024-12-03 10:17:04,737:INFO:Declaring metric variables
+2024-12-03 10:17:04,740:INFO:Importing untrained model
+2024-12-03 10:17:04,745:INFO:Extra Trees Classifier Imported successfully
+2024-12-03 10:17:04,752:INFO:Starting cross validation
+2024-12-03 10:17:04,753:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:09,075:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,083:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,086:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,094:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,101:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,114:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,136:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,140:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,167:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,178:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,181:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,182:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,182:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,187:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,190:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,198:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,200:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,208:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,215:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,216:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,273:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,280:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:09,288:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,334:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,340:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,346:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,349:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,354:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,358:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:10,370:INFO:Calculating mean and std
+2024-12-03 10:17:10,371:INFO:Creating metrics dataframe
+2024-12-03 10:17:10,374:INFO:Uploading results into container
+2024-12-03 10:17:10,375:INFO:Uploading model into container now
+2024-12-03 10:17:10,375:INFO:_master_model_container: 12
+2024-12-03 10:17:10,375:INFO:_display_container: 2
+2024-12-03 10:17:10,376:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=252, verbose=0,
+                     warm_start=False)
+2024-12-03 10:17:10,376:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:10,503:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:17:10,504:INFO:Creating metrics dataframe
+2024-12-03 10:17:10,515:INFO:Initializing Light Gradient Boosting Machine
+2024-12-03 10:17:10,515:INFO:Total runtime is 0.7092484712600708 minutes
+2024-12-03 10:17:10,520:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:17:10,520:INFO:Initializing create_model()
+2024-12-03 10:17:10,520:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:10,520:INFO:Checking exceptions
+2024-12-03 10:17:10,520:INFO:Importing libraries
+2024-12-03 10:17:10,520:INFO:Copying training dataset
+2024-12-03 10:17:10,548:INFO:Defining folds
+2024-12-03 10:17:10,548:INFO:Declaring metric variables
+2024-12-03 10:17:10,551:INFO:Importing untrained model
+2024-12-03 10:17:10,555:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-03 10:17:10,563:INFO:Starting cross validation
+2024-12-03 10:17:10,564:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:12,205:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,207:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,212:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,216:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,220:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,223:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,230:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,237:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,243:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,244:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,253:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,260:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,267:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,275:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,284:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,382:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,382:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,389:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,397:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,450:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,458:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,466:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,924:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,933:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,941:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,980:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,989:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:12,998:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,020:INFO:Calculating mean and std
+2024-12-03 10:17:13,023:INFO:Creating metrics dataframe
+2024-12-03 10:17:13,027:INFO:Uploading results into container
+2024-12-03 10:17:13,029:INFO:Uploading model into container now
+2024-12-03 10:17:13,029:INFO:_master_model_container: 13
+2024-12-03 10:17:13,030:INFO:_display_container: 2
+2024-12-03 10:17:13,031:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-03 10:17:13,031:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:13,173:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:17:13,173:INFO:Creating metrics dataframe
+2024-12-03 10:17:13,188:INFO:Initializing Dummy Classifier
+2024-12-03 10:17:13,188:INFO:Total runtime is 0.753795051574707 minutes
+2024-12-03 10:17:13,192:INFO:SubProcess create_model() called ==================================
+2024-12-03 10:17:13,192:INFO:Initializing create_model()
+2024-12-03 10:17:13,193:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029404EADBD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:13,193:INFO:Checking exceptions
+2024-12-03 10:17:13,193:INFO:Importing libraries
+2024-12-03 10:17:13,193:INFO:Copying training dataset
+2024-12-03 10:17:13,225:INFO:Defining folds
+2024-12-03 10:17:13,226:INFO:Declaring metric variables
+2024-12-03 10:17:13,231:INFO:Importing untrained model
+2024-12-03 10:17:13,236:INFO:Dummy Classifier Imported successfully
+2024-12-03 10:17:13,244:INFO:Starting cross validation
+2024-12-03 10:17:13,246:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:13,340:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,349:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,352:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,357:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,359:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,363:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,368:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,370:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,372:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,373:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,375:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,378:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,381:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,386:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,388:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,390:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,392:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,392:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,396:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,397:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,400:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,401:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,403:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,408:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,410:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,415:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,418:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,418:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,421:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,422:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,425:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,445:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,449:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,453:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,456:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,462:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,468:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,470:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-03 10:17:13,472:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:13,482:INFO:Calculating mean and std
+2024-12-03 10:17:13,484:INFO:Creating metrics dataframe
+2024-12-03 10:17:13,486:INFO:Uploading results into container
+2024-12-03 10:17:13,487:INFO:Uploading model into container now
+2024-12-03 10:17:13,487:INFO:_master_model_container: 14
+2024-12-03 10:17:13,487:INFO:_display_container: 2
+2024-12-03 10:17:13,488:INFO:DummyClassifier(constant=None, random_state=252, strategy='prior')
+2024-12-03 10:17:13,488:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:13,602:INFO:SubProcess create_model() end ==================================
+2024-12-03 10:17:13,602:INFO:Creating metrics dataframe
+2024-12-03 10:17:13,627:INFO:Initializing create_model()
+2024-12-03 10:17:13,627:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:13,628:INFO:Checking exceptions
+2024-12-03 10:17:13,630:INFO:Importing libraries
+2024-12-03 10:17:13,630:INFO:Copying training dataset
+2024-12-03 10:17:13,661:INFO:Defining folds
+2024-12-03 10:17:13,662:INFO:Declaring metric variables
+2024-12-03 10:17:13,662:INFO:Importing untrained model
+2024-12-03 10:17:13,662:INFO:Declaring custom model
+2024-12-03 10:17:13,663:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-03 10:17:13,664:INFO:Cross validation set to False
+2024-12-03 10:17:13,664:INFO:Fitting Model
+2024-12-03 10:17:13,719:INFO:[LightGBM] [Info] Number of positive: 17789, number of negative: 18254
+2024-12-03 10:17:13,724:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.001755 seconds.
+2024-12-03 10:17:13,724:INFO:You can set `force_row_wise=true` to remove the overhead.
+2024-12-03 10:17:13,724:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2024-12-03 10:17:13,724:INFO:[LightGBM] [Info] Total Bins 93
+2024-12-03 10:17:13,725:INFO:[LightGBM] [Info] Number of data points in the train set: 36043, number of used features: 16
+2024-12-03 10:17:13,725:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.493549 -> initscore=-0.025804
+2024-12-03 10:17:13,725:INFO:[LightGBM] [Info] Start training from score -0.025804
+2024-12-03 10:17:13,934:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-03 10:17:13,934:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:14,133:INFO:_master_model_container: 14
+2024-12-03 10:17:14,134:INFO:_display_container: 2
+2024-12-03 10:17:14,134:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-03 10:17:14,135:INFO:compare_models() successfully completed......................................
+2024-12-03 10:17:14,196:INFO:Initializing create_model()
+2024-12-03 10:17:14,197:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 10:17:14,197:INFO:Checking exceptions
+2024-12-03 10:17:14,225:INFO:Importing libraries
+2024-12-03 10:17:14,225:INFO:Copying training dataset
+2024-12-03 10:17:14,274:INFO:Defining folds
+2024-12-03 10:17:14,274:INFO:Declaring metric variables
+2024-12-03 10:17:14,279:INFO:Importing untrained model
+2024-12-03 10:17:14,284:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-03 10:17:14,295:INFO:Starting cross validation
+2024-12-03 10:17:14,297:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 10:17:15,956:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:15,960:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:15,964:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:15,969:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:15,971:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:15,976:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,023:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,031:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,039:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,054:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,062:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,070:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,154:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,162:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,162:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,170:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,170:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,179:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,180:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,188:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,197:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,357:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,365:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,373:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,682:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,691:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,691:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,700:WARNING:c:\Users\raulj\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 2) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-12-03 10:17:16,720:INFO:Calculating mean and std
+2024-12-03 10:17:16,723:INFO:Creating metrics dataframe
+2024-12-03 10:17:16,736:INFO:Finalizing model
+2024-12-03 10:17:16,810:INFO:[LightGBM] [Info] Number of positive: 17789, number of negative: 18254
+2024-12-03 10:17:16,816:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.001862 seconds.
+2024-12-03 10:17:16,816:INFO:You can set `force_row_wise=true` to remove the overhead.
+2024-12-03 10:17:16,816:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2024-12-03 10:17:16,817:INFO:[LightGBM] [Info] Total Bins 93
+2024-12-03 10:17:16,817:INFO:[LightGBM] [Info] Number of data points in the train set: 36043, number of used features: 16
+2024-12-03 10:17:16,818:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.493549 -> initscore=-0.025804
+2024-12-03 10:17:16,818:INFO:[LightGBM] [Info] Start training from score -0.025804
+2024-12-03 10:17:17,068:INFO:Uploading results into container
+2024-12-03 10:17:17,070:INFO:Uploading model into container now
+2024-12-03 10:17:17,094:INFO:_master_model_container: 15
+2024-12-03 10:17:17,095:INFO:_display_container: 3
+2024-12-03 10:17:17,096:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-03 10:17:17,097:INFO:create_model() successfully completed......................................
+2024-12-03 10:17:17,248:INFO:Initializing plot_model()
+2024-12-03 10:17:17,248:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=auc, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-12-03 10:17:17,248:INFO:Checking exceptions
+2024-12-03 10:17:17,262:INFO:Preloading libraries
+2024-12-03 10:17:17,274:INFO:Copying training dataset
+2024-12-03 10:17:17,274:INFO:Plot type: auc
+2024-12-03 10:17:17,541:INFO:Fitting Model
+2024-12-03 10:17:17,542:INFO:Scoring test/hold-out set
+2024-12-03 10:17:17,922:INFO:Visual Rendered Successfully
+2024-12-03 10:17:18,034:INFO:plot_model() successfully completed......................................
+2024-12-03 10:17:18,035:INFO:Initializing plot_model()
+2024-12-03 10:17:18,035:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002940380F2D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=252, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), plot=feature, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-12-03 10:17:18,035:INFO:Checking exceptions
+2024-12-03 10:17:18,047:INFO:Preloading libraries
+2024-12-03 10:17:18,056:INFO:Copying training dataset
+2024-12-03 10:17:18,057:INFO:Plot type: feature
+2024-12-03 10:17:18,057:WARNING:No coef_ found. Trying feature_importances_
+2024-12-03 10:17:18,354:INFO:Visual Rendered Successfully
+2024-12-03 10:17:18,465:INFO:plot_model() successfully completed......................................
